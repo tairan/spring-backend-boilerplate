@@ -1,5 +1,5 @@
 dependencies {
-    compile project(':sample/setting/core')
-    compile project(':sample/setting/impl')
-    compile project(':sample/setting/rest')
+    compile project(':sample:setting:core')
+    compile project(':sample:setting:impl')
+    compile project(':sample:setting:rest')
 }

@@ -4,9 +4,9 @@ dependencies {
     compile libs.daas
 
     compile project(':shared')
-    compile project(':security/core')
-    compile project(':sample/setting/core')
-    compile project(':sample/setting/impl')
-    compile project(':menu/core')
+    compile project(':security:core')
+    compile project(':sample:setting:core')
+    compile project(':sample:setting:impl')
+    compile project(':menu:core')
 
 }

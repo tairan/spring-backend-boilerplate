@@ -3,6 +3,6 @@ dependencies {
     compile libs.springDataMongodb
     compile libs.springSecurity
 
-    compile project(':rbac/resource')
+    compile project(':rbac:resource')
 
 }

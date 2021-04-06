@@ -5,9 +5,9 @@ dependencies {
     compile libs.daas
 
     compile project(':shared')
-    compile project(':security/spring')
-    compile project(':account/starter')
-    compile project(':audit/starter')
-    compile project(':menu/starter')
-    compile project(':rbac/starter')
+    compile project(':security:spring')
+    compile project(':account:starter')
+    compile project(':audit:starter')
+    compile project(':menu:starter')
+    compile project(':rbac:starter')
 }

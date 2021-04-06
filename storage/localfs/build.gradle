@@ -3,6 +3,6 @@ dependencies {
     compile libs.springDataMongodb
     compile libs.daas
 
-    compile project(":storage/core")
+    compile project(":storage:core")
 
 }

@@ -4,5 +4,5 @@ dependencies {
 	compile libs.daas
 	compile libs.aliyun
 
-	compile project(':passcode/core')
+	compile project(':passcode:core')
 }

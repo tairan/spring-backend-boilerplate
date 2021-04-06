@@ -1,10 +1,6 @@
 apply from: "$rootDir/gradle/dependencies.gradle"
 apply plugin: 'idea'
 
-task wrapper(type: Wrapper) {
-    gradleVersion = '2.14.1'
-}
-
 allprojects {
 
     buildscript {
@@ -36,25 +32,25 @@ subprojects {
     apply plugin: 'idea'
 
     sourceCompatibility = JavaVersion.VERSION_1_8
+//
+//    jar {
+//        baseName = project.archiveBaseName
+//        version = project.version
+//    }
 
-    jar {
-        baseName = project['artifactId']
-        version = project['version']
-    }
-
-    task sourcesJar(type: Jar) {
-        baseName = project['artifactId']
-        version = project['version']
-        classifier = 'sources'
-        from sourceSets.main.allSource
-    }
-
-    artifacts {
-        archives sourcesJar
-    }
-
-    dependencies {
-        testCompile libs.test
-    }
+//    task sourcesJar(type: Jar) {
+//        baseName = project['artifactId']
+//        version = project['version']
+//        classifier = 'sources'
+//        from sourceSets.main.allSource
+//    }
+//
+//    artifacts {
+//        archives sourcesJar
+//    }
+//
+//    dependencies {
+//        testCompile libs.test
+//    }
 
 }

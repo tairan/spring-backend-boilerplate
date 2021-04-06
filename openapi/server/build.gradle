@@ -13,7 +13,7 @@ buildscript {
 }
 
 apply plugin: 'java'
-apply plugin: 'spring-boot'
+apply plugin: 'org.springframework.boot'
 
 dependencies {
     compile libs.springBoot
@@ -23,18 +23,18 @@ dependencies {
     compile libs.daas
 
     compile project(':shared')
-    compile project(':account/starter')
-    compile project(':audit/starter')
-    compile project(':menu/starter')
-    compile project(':rbac/starter')
-    compile project(':sample/news/starter')
-    compile project(':sample/attachment/starter')
-    compile project(':sample/setting/starter')
-    compile project(':message/sms/starter')
-    compile project(':storage/starter')
-    compile project(':support/cors')
-    compile project(':support/webhook')
-    compile project(':support/security')
+    compile project(':account:starter')
+    compile project(':audit:starter')
+    compile project(':menu:starter')
+    compile project(':rbac:starter')
+    compile project(':sample:news:starter')
+    compile project(':sample:attachment:starter')
+    compile project(':sample:setting:starter')
+    compile project(':message:sms:starter')
+    compile project(':storage:starter')
+    compile project(':support:cors')
+    compile project(':support:webhook')
+    compile project(':support:security')
 }
 
 bootRun {

@@ -1,4 +1,4 @@
 dependencies {
-    compile project(':audit/impl')
-    compile project(':audit/rest')
+    compile project(':audit:impl')
+    compile project(':audit:rest')
 }

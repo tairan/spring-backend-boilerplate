@@ -13,7 +13,7 @@ buildscript {
 }
 
 apply plugin: 'java'
-apply plugin: 'spring-boot'
+apply plugin: 'org.springframework.boot'
 
 dependencies {
     compile libs.springfox
@@ -25,17 +25,17 @@ dependencies {
     compile libs.springBootTomcat
 
     compile project(':shared')
-    compile project(':security/spring')
-    compile project(':account/rest')
-    compile project(':audit/rest')
-    compile project(':menu/rest')
-    compile project(':rbac/rest')
-    compile project(':sample/news/rest')
-    compile project(':sample/attachment/rest')
-    compile project(':sample/setting/rest')
-    compile project(':message/sms/history')
-    compile project(':storage/gridfs')
-    compile project(':storage/rest')
+    compile project(':security:spring')
+    compile project(':account:rest')
+    compile project(':audit:rest')
+    compile project(':menu:rest')
+    compile project(':rbac:rest')
+    compile project(':sample:news:rest')
+    compile project(':sample:attachment:rest')
+    compile project(':sample:setting:rest')
+    compile project(':message:sms:history')
+    compile project(':storage:gridfs')
+    compile project(':storage:rest')
 }
 
 bootRun {
